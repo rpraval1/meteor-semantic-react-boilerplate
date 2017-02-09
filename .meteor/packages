@@ -21,4 +21,5 @@ react-meteor-data
 semantic:ui
 less
 juliancwirko:postcss
+accounts-password
 std:accounts-ui
