@@ -23,7 +23,8 @@ class NavBar extends Component{
   }
 
   render(){
-    const { currentUser, children, base_url, activeItem, loginToken} = this.props;
+    const { currentUser, children, base_url, loginToken} = this.props;
+    const {activeItem} = this.state
 
   return(
     <div>
