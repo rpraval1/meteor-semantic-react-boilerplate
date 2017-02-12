@@ -12,6 +12,12 @@ export default class SignUpPage extends Component {
     };
   }
 
+  componentWillMount(){
+    if(this.props.loginToken){
+      browserHistory.push('/');
+    }
+  }
+
   render(){
     const error = this.state.error;
     return (

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Container, Grid, Icon, Menu, Message, Segment } from 'semantic-ui-react'
-import { Accounts, STATES } from '../../startup/accounts-config';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 
