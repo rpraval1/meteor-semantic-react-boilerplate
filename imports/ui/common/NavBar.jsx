@@ -10,7 +10,6 @@ class NavBar extends Component{
     super(props);
 
     this.state = {activeItem:""}
-    this.logout = this.logout.bind(this);
     //console.log(props);
   }
   handleItemClick(e,{name}){
@@ -58,11 +57,11 @@ class NavBar extends Component{
              <img src='http://semantic-ui.com/images/logo.png' />
            </Menu.Item>
            <Menu.Menu position='right'>
-         <Menu.Item href='/signup' name='signup' active={activeItem === 'signup'} onClick={this.handleItemClick.bind(this)}>
+         <Menu.Item href={Meteor.absoluteUrl('signup')} name='signup' active={activeItem === 'signup'} onClick={this.handleItemClick.bind(this)}>
            Sign Up
          </Menu.Item>
 
-         <Menu.Item href='/signin' name='signin' active={activeItem === 'signin'} onClick={this.handleItemClick.bind(this)}>
+         <Menu.Item href={Meteor.absoluteUrl('signup')} name='signin' active={activeItem === 'signin'} onClick={this.handleItemClick.bind(this)}>
            Sign In
          </Menu.Item>
        </Menu.Menu>

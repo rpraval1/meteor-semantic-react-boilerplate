@@ -6,9 +6,9 @@ import NavBar from './NavBar';
 
 
 //create component
-const Header = (props) => {
+const Header = () => {
   return(
-    <NavBar base_url={props.base_url} />
+    <NavBar />
   );
 }
 

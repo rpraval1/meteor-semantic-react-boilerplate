@@ -13,12 +13,12 @@ class App extends Component {
   }
 
   render(){
-    this.base_url = "http://localhost:3000/";
+    //this.base_url = "http://localhost:3000/";
 
     //console.log(this.base_url);
     return(
       <div>
-        <Header base_url={this.base_url} />
+        <Header />
           {this.props.children}
         <Footer />
       </div>

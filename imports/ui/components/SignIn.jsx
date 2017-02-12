@@ -28,7 +28,7 @@ class SignIn extends Component {
       } else {
         browserHistory.push('/');
       }
-      this.setState({loading:false})
+      //this.setState({loading:false})
     });
   }
 

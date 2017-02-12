@@ -13,7 +13,7 @@ class Home extends Component{
     return(
       <Message>
         <Message.Header>
-           { loginToken ? 'Welcome, '+ currentUser.profile.name : '' }
+           { loginToken ? 'Welcome, '+ currentUser.username: '' }
         </Message.Header>
         <p>
           This is a test for meteor-react-semantic-ui boilerplate. You can now clone this and enjoy your project bulding with meteor-react-semantic-ui!!
